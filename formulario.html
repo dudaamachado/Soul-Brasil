@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+ <html lang="pt-br">
+ <head>
+ 	<title>Formulário Soul Brasil</title>
+ 		<meta charset="uft-8"/>
+ 		    <link rel="stylesheet" href="estilo.css">
+ </head>
+    
+    <body>
+    	<header>
+    		<figure>
+    			<img src="soul.png">
+    		</figure>
+    	</header>
+    	<main>
+		<form>
+			<h2>Dados Pessoais</h2>
+           <label>Nome Completo:</label>
+           <input type="text" name="campotext">
+           <br>
+
+           <label>RG:</label>
+           <input type="text" name="camporg" placeholder="00.000.000-00" required maxlength="10" class="camporg">
+           <br>
+
+           <label>CPF:</label>
+           <input type="text" name="campocpf" placeholder="000.000.000-00" required maxlength="11" class="campocpf">
+           <br>
+
+           <label>Data de Nascimento:</label>
+           <input type="date" name="campodtnasc" placeholder="00/00/0000" required maxlength="8" class="campodtnasc">
+           <br>
+
+           <label>Cidade:</label>
+           <input type="text" name="campocidade" required class="campocidade">
+
+           <label>Estado:</label>
+			<select name= "uf">
+				 <option value="AC">AC</option>
+				 <option value="AL">AL</option>
+				 <option value="AP">AP</option>
+				 <option value="AM">AM</option>
+				 <option value="BA">BA</option>
+				 <option value="CE">CE</option>
+				 <option value="ES">ES</option>
+				 <option value="GO">GO</option>
+				 <option value="MA">MA</option>
+				 <option value="MT">MT</option>
+				 <option value="MS">MS</option>
+				 <option value="MG">MG</option>
+				 <option value="PA">PA</option>
+				 <option value="PB">PB</option>
+				 <option value="PR">PR</option>
+				 <option value="PE">PE</option>
+				 <option value="PI">PI</option>
+				 <option value="RJ">RJ</option>
+				 <option value="RN">RN</option>
+				 <option value="RS">RS</option>
+				 <option value="RO">RO</option>
+				 <option value="RR">RR</option>
+				 <option value="SC">SC</option>
+				 <option value="SP">SP</option>
+				 <option value="SE">SE</option>
+				 <option value="TO">TO</option>
+				 <option value="DF">DF</option>
+			</select>
+			<br>
+
+            <h3>Dados de Contato</h3>
+           <label>Número de Telefone:</label>
+           <input type="number" name="campotelefone" placeholder="00-00000-0000"required maxlength="11" class="campotelefone">
+           <br>
+
+           <label>Endereço:</label>
+           <input type="text" name="campoendereço" placeholder="Rua:Carlos Benedito, Vila:Maria , N°35" required class="campoendereço">
+           <br>
+
+           <label>E-mail:</label>
+           <input type="email" name="campoemail" placeholder="nome@servidor" required maxlength="5" size="20" class="campoemail">
+		   <br>
+
+		    <h2>Dados Profissionais</h2>
+		   <label> Escola de Formação:</label>
+		   <input type="text" name="campofomação" required class="campoformação">
+		   <br> 
+
+		   <label>Áreas que atua:</label> 
+           <input type="text" name="campoarea" required class="campoarea">
+           <br>
+
+         <label>Categorias:</label><br>
+          	<input type="radio" name="categoria" value="1">
+         <label class="categoria">Dança</label> 	 
+         	<input type="radio" name="categoria" value="2">
+         <label class="categoria">Teatro</label> 	 
+         	<input type="radio" name="categoria" value="3">	
+         <label class="categoria">Música</label> 	 
+         	<input type="radio" name="categoria" value="4">	
+         <label class="categoria">Pintura</label> 	 
+         	<input type="radio" name="categoria" value="5">
+         <label class="categoria">Cinema</label> 	 
+         	<input type="radio" name="categoria" value="6">
+         <label class="categoria">Escultura</label> 	 <input type="radio" name="categoria" value="8">
+         <label class="categoria">Literatura</label> 	 <input type="radio" name="categoria" valu2="9">
+         <label class="categoria">Nenhuma</label> 	 
+
+         <label>Principais Habilidades:</label><br>
+           <textarea cols="70" rows="5"></textarea><br>
+
+			<input type="submit" value="ENVIAR">
+		</form>
+	</main>
+	<footer>
+   <p>Soul Brasil</p>
+<p>Desenvolvido por Maria Eduarda Machado</p>
+</footer>
+  </body>
+ </html>
